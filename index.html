@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Responsive</h1>
+        <nav>
+            <ul><br>
+                <li><a href="#calculator">Calculator</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="calculator-container">
+            <section id="calculator" class="calculator-section">
+                <h2>Calculator</h2>
+                <div class="calculator">
+                    <div class="operation" id="operation"></div>
+                    <div class="display" id="display">0</div>
+                    <div class="buttons">
+                        <button class="button" onclick="appendNumber(7)">7</button>
+                        <button class="button" onclick="appendNumber(8)">8</button>
+                        <button class="button" onclick="appendNumber(9)">9</button>
+                        <button class="button operator" onclick="setOperation('+')">+</button>
+                        <button class="button" onclick="appendNumber(4)">4</button>
+                        <button class="button" onclick="appendNumber(5)">5</button>
+                        <button class="button" onclick="appendNumber(6)">6</button>
+                        <button class="button operator" onclick="setOperation('-')">-</button>
+                        <button class="button" onclick="appendNumber(1)">1</button>
+                        <button class="button" onclick="appendNumber(2)">2</button>
+                        <button class="button" onclick="appendNumber(3)">3</button>
+                        <button class="button operator" onclick="setOperation('*')">*</button>
+                        <button class="button" onclick="appendNumber(0)">0</button>
+                        <button class="button operator" onclick="clearDisplay()">C</button>
+                        <button class="button operator" onclick="setOperation('/')">/</button>
+                        <button class="button operator" onclick="calculate()">=</button>
+                        <button class="button operator" onclick="calculateSquareRoot()">√</button>
+                        <button class="button operator" onclick="calculateSquare()">x²</button>
+                        <button class="button operator" onclick="calculateSine()">sin</button>
+                        <button class="button operator" onclick="calculateCosine()">cos</button>
+                        <button class="button operator" onclick="calculateTangent()">tan</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="contact">
+            <p>&copy; 2024 Portfolio</p>
+            <p>This website is made by P. Hari Sai</p>
+            <div class="social-links">
+                <a href="https://github.com/harisaigithub" target="_blank"><img src="asserts/github-logo.png" alt="GitHub"></a>
+                <a href="https://www.linkedin.com/in/parasa-hari-sai" target="_blank"><img src="asserts/linkedin-logo.png" alt="LinkedIn"></a>
+                <a href="https://parasa-harisai-portfolio.netlify.app/" target="_blank"><img src="asserts/website-logo.png" alt="Website"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
